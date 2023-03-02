@@ -26,7 +26,7 @@ Here are the fields available to configure the Remitly experience.
 
 `layout` governs how the Remitly modal will display inside of your host app. Options are:
 
--   `modalPosition` Options are `center`, `left`, and `right`, to control which side of the screen the modal floats to.
+-   `modalPosition`: Options are `center`, `left`, and `right`, controlling the float position of the modal.
 
 `onLoad` is a callback that triggers once the Remitly website has loaded within the iframe.
 `onClose` is a callback that triggers when the user closes the Remitly experience from within the experience.
