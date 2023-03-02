@@ -51,8 +51,6 @@ const getMessageListener = (state) => (message) => {
     } else if (topic === "event") {
         state.onMessage?.(event.payload.eventType);
     } else if (topic === "hideCloseButton") {
-        // We need to post the ce_login_redirect message after Narwhal is initialized and listening for events
-        // Therefore we wait on the hideCloseButton event, which is fired once after Narwhal's initialization  
         const redirectPath = `${state.defaultReceiveCountry}/${state.appId}?utm_medium=channelpartner&utm_source=${state.appId}`;
 
         // Using '*' is fine because the redirectPath is public information
@@ -88,24 +86,7 @@ function makeUrl(config, baseUrl) {
 }
 
 function getIframeUrl(config) {
-    // For running other packages locally, uncomment either of the following.
-
-    // For Narwhal:
-    // return "http://localhost:3000";
-
-    // For Portal:
-    // return "http://remitlyweb.test:443";
-    
-    // For Caribou:
-    // You will also need to replace 127.0.0.1 in devTemplate.html with a different address
-    // by running serve:script without specifying -a 127.0.0.1
-    // return "http://localhost:3001/test_component/en/us/mexico/1006c281-4db7-4eb1-920a-325321e5b180";
-
-    if (config.environment === "development" || config.environment === "staging") {
-        return makeUrl(config, "https://preprod.dev.remitly.com");
-    } else {
-        return makeUrl(config, "https://remitly.com");
-    }
+    return makeUrl(config, "https://remitly.com");
 }
 
 const centerModalStyle = {

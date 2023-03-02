@@ -1,0 +1,22 @@
+{
+  "name": "@remitly/remitly-ce-web-sdk",
+  "version": "1.0.0",
+  "description": "Web SDK for the Remitly Connected Experiences product",
+  "main": "ce-web-sdk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remitly-oss/remitly-ce-web-sdk.git"
+  },
+  "keywords": [
+    "Remitly"
+  ],
+  "author": "nickw@remitly.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/remitly-oss/remitly-ce-web-sdk/issues"
+  },
+  "homepage": "https://github.com/remitly-oss/remitly-ce-web-sdk#readme"
+}
