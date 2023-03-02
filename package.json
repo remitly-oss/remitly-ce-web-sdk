@@ -1,6 +1,6 @@
 {
   "name": "@remitly/remitly-ce-web-sdk",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Web SDK for the Remitly Connected Experiences product",
   "main": "ce-web-sdk.js",
   "scripts": {
